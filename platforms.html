@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>Jan Flitter - Impressum</title>
+<title>Jan Flitter - Plattformen</title>
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -44,11 +44,47 @@ li a:hover:not(.active) {
 .active {
     background-color: #f44336;
 }
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 30px; /* Place the button at the bottom of the page */
+    right: 5px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #f44336; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+}
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+.w3-margin-right {
+    margin-right: 119.5px!important;
+}
+.w3-margin-left {
+    margin-left: 119.5px!important;
 </style>
 
-
 <body>
-
+<body bgcolor="#f1f1f1">
+<button onclick="topFunction()" id="myBtn" title="Go to top">Nach oben</button>
+<script>// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Chrome, Safari and Opera 
+    document.documentElement.scrollTop = 0; // For IE and Firefox
+} </script>   
 
 <ul>
   <li><a href="./">Startseite</a></li>
@@ -70,34 +106,34 @@ li a:hover:not(.active) {
 
   </div>
   <div class="w3-container w3-card-2 w3-white w3-margin-bottom w3-margin-right w3-margin-left">  
-  <h3 class="w3-text-grey w3-padding-16"><i class="fa fa-address-card-o fa-fw w3-margin-right w3-xxlarge w3-text-red"></i>Ich bin auch auf folgenden Plattformen zu finden:</h3>
+  <h3 class="w3-text-grey w3-padding-16"><i class="fa fa-address-card-o fa-fw w3-xxlarge w3-text-red"></i>&nbsp;Ich bin auch auf folgenden Plattformen zu finden:</h3>
 
 </div>
   <div class="w3-container w3-card-2 w3-white w3-margin-bottom w3-margin-right w3-margin-left">
   
   <h5 class="w3-opacity"><b>Beruflich</b></h5>
   <hr>
-  <p><i class="fa fa-github-square fa-fw fa-2x w3-text-red w3-margin-right"></i><font size="4">https://github.com/JanFlitter</font></p>
-  <p><i class="fa fa-stack-overflow fa-fw fa-2x w3-text-red w3-margin-right"></i><font size="4">https://stackoverflow.com/users/8456519/humpaaa</font></p>
-  <p><i class="fa fa-xing-square fa-fw fa-2x w3-text-red w3-margin-right"></i><font size="4">https://www.xing.com/profile/Jan_Flitter</font></p>
-  <p><i class="fa fa-whatsapp fa-fw fa-2x w3-text-red w3-margin-right"></i><font size="4">(+49)175 8957110</font></p>
-  <p><i class="fa fa-key fa-fw fa-2x w3-text-red w3-margin-right"></i><font size="4">PGP-Fingerprint: 8CD3 2E70 B55A 2850 61A8 FDD3 F139 1B8A B385 6B65</font></p>
+  <p><i class="fa fa-github-square fa-fw fa-2x w3-text-red"></i><font size="4">&nbsp;https://github.com/JanFlitter</font></p>
+  <p><i class="fa fa-stack-overflow fa-fw fa-2x w3-text-redt"></i><font size="4">&nbsp;https://stackoverflow.com/users/8456519/humpaaa</font></p>
+  <p><i class="fa fa-xing-square fa-fw fa-2x w3-text-red"></i><font size="4">&nbsp;https://www.xing.com/profile/Jan_Flitter</font></p>
+  <p><i class="fa fa-whatsapp fa-fw fa-2x w3-text-red"></i><font size="4">&nbsp;(+49)175 8957110</font></p>
+  <p><i class="fa fa-key fa-fw fa-2x w3-text-red"></i><font size="4">&nbsp;PGP-Fingerprint: 8CD3 2E70 B55A 2850 61A8 FDD3 F139 1B8A B385 6B65</font></p>
   </div>
   
   <div class="w3-container w3-card-2 w3-white w3-margin-right w3-margin-left" style="margin-bottom: 32px">
   
 <h5 class="w3-opacity"><b>Privat</b></h5>
   <hr>
-  <p><i class="fa fa-facebook-official fa-fw fa-2x w3-text-red w3-margin-right"></i><font size="4">https://www.facebook.com/flitter.jan</font></p>
-  <p><i class="fa fa-google-plus-square fa-fw fa-2x w3-text-red w3-margin-right"></i><font size="4">https://plus.google.com/+JanFlitter</font></p>
-  <p><i class="fa fa-fw w3-large w3-text-red w3-margin-right"></i></p>
-  <p><i class="fa fa-reddit-square fa-fw fa-2x w3-text-red w3-margin-right"></i><font size="4">https://www.reddit.com/user/Humpaaa/</font></p>
-  <p><i class="fa fa-soundcloud fa-fw fa-2x w3-text-red w3-margin-right"></i><font size="4">https://soundcloud.com/humpaaa89</font></p>
-  <p><i class="fa fa-steam fa-fw fa-2x w3-text-red w3-margin-right"></i><font size="4">https://steamcommunity.com/id/Humpaaa</font></p>
-  <p><i class="fa fa-twitch fa-fw fa-2x w3-text-red w3-margin-right"></i><font size="4">https://www.twitch.tv/humpaaa89</font></p>
-  <p><i class="fa fa-twitter fa-fw fa-2x w3-text-red w3-margin-right"></i><font size="4">https://twitter.com/humpaaa89</font></p>
-  <p><i class="fa fa-vimeo-square fa-fw fa-2x w3-text-red w3-margin-right"></i><font size="4">https://vimeo.com/humpaaa89</font></p>
-  <p><i class="fa fa-youtube-square fa-fw fa-2x w3-text-red w3-margin-right"></i><font size="4">https://www.youtube.com/user/Humpaaa89/</font></p>
+  <p><i class="fa fa-facebook-official fa-fw fa-2x w3-text-red"></i><font size="4">&nbsp;https://www.facebook.com/flitter.jan</font></p>
+  <p><i class="fa fa-google-plus-square fa-fw fa-2x w3-text-red"></i><font size="4">&nbsp;https://plus.google.com/+JanFlitter</font></p>
+  <p><i class="fa fa-fw w3-large w3-text-red"></i></p>
+  <p><i class="fa fa-reddit-square fa-fw fa-2x w3-text-red"></i><font size="4">&nbsp;https://www.reddit.com/user/Humpaaa/</font></p>
+  <p><i class="fa fa-soundcloud fa-fw fa-2x w3-text-red"></i><font size="4">&nbsp;https://soundcloud.com/humpaaa89</font></p>
+  <p><i class="fa fa-steam fa-fw fa-2x w3-text-red"></i><font size="4">&nbsp;https://steamcommunity.com/id/Humpaaa</font></p>
+  <p><i class="fa fa-twitch fa-fw fa-2x w3-text-red"></i><font size="4">&nbsp;https://www.twitch.tv/humpaaa89</font></p>
+  <p><i class="fa fa-twitter fa-fw fa-2x w3-text-red"></i><font size="4">&nbsp;https://twitter.com/humpaaa89</font></p>
+  <p><i class="fa fa-vimeo-square fa-fw fa-2x w3-text-red"></i><font size="4">&nbsp;https://vimeo.com/humpaaa89</font></p>
+  <p><i class="fa fa-youtube-square fa-fw fa-2x w3-text-red"></i><font size="4">&nbsp;https://www.youtube.com/user/Humpaaa89/</font></p>
 
 </div>
 
