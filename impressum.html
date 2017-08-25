@@ -15,7 +15,6 @@ body{
 font-family: "Roboto", sans-serif
 background-color: #f1f1f1;
 }
-
 ul {
     list-style-type: none;
     position: fixed;
@@ -43,35 +42,61 @@ li a:hover:not(.active) {
 .active {
     background-color: #f44336;
 }
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 30px; /* Place the button at the bottom of the page */
+    right: 5px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #2196F3; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+}
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+}
+.w3-margin-right {
+    margin-right: 119.5px!important;
+}
+.w3-margin-left {
+    margin-left: 119.5px!important;
 </style>
-
-
 <body>
 <body bgcolor="#f1f1f1">
-
+<button onclick="topFunction()" id="myBtn" title="Go to top">Nach oben</button>
+<script>// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Chrome, Safari and Opera 
+    document.documentElement.scrollTop = 0; // For IE and Firefox
+} </script>    
 <ul>
   <li><a href="./">Startseite</a></li>
   <li><a href="platforms">Andere Plattformen</a></li>
   <li style="float:right"><a class="active" href="impressum">Impressum</a></li>
 </ul>
-
-
-
 <div class="w3-bottom">
-  <div class="w3-bar w3-red">
+  <div class="w3-bar w3-blue">
     <p align="center"></p>
   </div>
 </div>
-
 <br><br>
-
 <div class="w3-container w3-card-2 w3-white w3-margin-bottom w3-margin-right w3-margin-left">
-
   </div>
   <div class="w3-container w3-card-2 w3-white w3-margin-bottom w3-margin-right w3-margin-left">
-
-<h2 class="w3-text-grey w3-padding-16"><i class="fa fa-shield fa-fw w3-margin-right w3-xxlarge w3-text-red"></i>Impressum</h2>
-
+<h2 class="w3-text-grey w3-padding-16"><i class="fa fa-shield fa-fw w3-xxlarge w3-text-blue"></i>&nbsp;Impressum</h2>
 <div class="w3-container">
   <h5 class="w3-opacity"><b>Angaben gemäß §5 TMG</b></h5>
   <hr>
@@ -81,8 +106,8 @@ li a:hover:not(.active) {
   28199 Bremen</p>
   <hr>
   <p><b>Telefonisch und per Email erreichbar:</b></p>
-  <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-red"></i>flitter.jan@gmail.com</p>
-  <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-red"></i>(+49)1758957110<br> </p>
+  <p><i class="fa fa-envelope fa-fw w3-large w3-text-blue"></i>&nbsp;flitter.jan@gmail.com</p>
+  <p><i class="fa fa-phone fa-fw w3-large w3-text-blue"></i>&nbsp;(+49)1758957110<br> </p>
   
   </div></div>
   <div class="w3-container w3-card-2 w3-white w3-margin-bottom w3-margin-right w3-margin-left">
@@ -121,7 +146,6 @@ Die Darstellung dieser Website in fremden Frames ist nur mit schriftlicher Erlau
 Soweit besondere Bedingungen für einzelne Nutzungen dieser Website von den vorgenannten Paragraphen abweichen, wird an entsprechender Stelle ausdrücklich darauf hingewiesen. In diesem Falle gelten im jeweiligen Einzelfall die besonderen Nutzungsbedingungen.</p>
   
 </div>
-
   <div class="w3-container w3-card-2 w3-white w3-margin-right w3-margin-left" style="margin-bottom: 32px">
   
   <h5 class="w3-opacity"><b>Datenschutzerklärung:</b></h5>
@@ -137,6 +161,5 @@ Die Verwendung der Kontaktdaten unseres Impressums zur gewerblichen Werbung ist 
 Sie können unsere Webseite ohne Angabe personenbezogener Daten besuchen. Soweit auf unseren Seiten personenbezogene Daten (wie Name, Anschrift oder E-Mail Adresse) erhoben werden, erfolgt dies, soweit möglich, auf freiwilliger Basis. Diese Daten werden ohne Ihre ausdrückliche Zustimmung nicht an Dritte weitergegeben. Sofern zwischen Ihnen und uns ein Vertragsverhältnis begründet, inhaltlich ausgestaltet oder geändert werden soll oder Sie an uns eine Anfrage stellen, erheben und verwenden wir personenbezogene Daten von Ihnen, soweit dies zu diesen Zwecken erforderlich ist (Bestandsdaten). Wir erheben, verarbeiten und nutzen personenbezogene Daten soweit dies erforderlich ist, um Ihnen die Inanspruchnahme des Webangebots zu ermöglichen (Nutzungsdaten). Sämtliche personenbezogenen Daten werden nur solange gespeichert wie dies für den geannten Zweck (Bearbeitung Ihrer Anfrage oder Abwicklung eines Vertrags) erforderlich ist. Hierbei werden steuer- und handelsrechtliche Aufbewahrungsfristen berücksichtigt. Auf Anordnung der zuständigen Stellen dürfen wir im Einzelfall Auskunft über diese Daten (Bestandsdaten) erteilen, soweit dies für Zwecke der Strafverfolgung, zur Gefahrenabwehr, zur Erfüllung der gesetzlichen Aufgaben der Verfassungsschutzbehörden oder des Militärischen Abschirmdienstes oder zur Durchsetzung der Rechte am geistigen Eigentum erforderlich ist.</p><p><strong>Auskunftsrecht</strong><br />Sie haben das jederzeitige Recht, sich unentgeltlich und unverzüglich über die zu Ihrer Person erhobenen Daten zu erkundigen. Sie haben das jederzeitige Recht, Ihre Zustimmung zur Verwendung Ihrer angegeben persönlichen Daten mit Wirkung für die Zukunft zu widerrufen. Zur Auskunftserteilung wenden Sie sich bitte an den Anbieter unter den Kontaktdaten im Impressum.</p>
   
 </div>
-
 </body>
 </html>
