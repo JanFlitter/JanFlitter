@@ -1,47 +1,67 @@
 <!DOCTYPE html>
 <html>
 <title>Jan Flitter - Impressum</title>
-<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
 <style>
-html,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-body{
-font-family: "Roboto", sans-serif
-background-color: #f1f1f1;
-}
+
 ul {
     list-style-type: none;
-    position: fixed;
+ /*   position: fixed;*/
     top: 0;
     width: 100%;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
-    z-index: 99;
+    z-index: 98;
 }
 li {
     float: left;
 }
-li a {
-    display: block;
+.active {
+    background-color: #f44336;
+}
+
+li a, .dropbtn {
+    display: inline-block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
-li a:hover:not(.active) {
-    background-color: #111;
-}
-.active {
+
+li a:hover, .dropdown:hover .dropbtn {
     background-color: #f44336;
 }
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 99;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 #myBtn {
     display: none; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
@@ -59,13 +79,18 @@ li a:hover:not(.active) {
 #myBtn:hover {
     background-color: #555; /* Add a dark-grey background on hover */
 }
+
 .w3-margin-right {
     margin-right: 119.5px!important;
 }
 .w3-margin-left {
     margin-left: 119.5px!important;
+} 
+
 </style>
+
 <body>
+
 <body bgcolor="#f1f1f1">
 <button onclick="topFunction()" id="myBtn" title="Go to top">Nach oben</button>
 <script>// When the user scrolls down 20px from the top of the document, show the button
@@ -81,12 +106,21 @@ function scrollFunction() {
 function topFunction() {
     document.body.scrollTop = 0; // For Chrome, Safari and Opera 
     document.documentElement.scrollTop = 0; // For IE and Firefox
-} </script>    
+} </script>
+
 <ul>
   <li><a href="./">Startseite</a></li>
-  <li><a href="platforms">Andere Plattformen</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Projekte</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
   <li style="float:right"><a class="active" href="impressum">Impressum</a></li>
 </ul>
+
 <div class="w3-bottom">
   <div class="w3-bar w3-red">
     <p align="center"></p>
